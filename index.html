@@ -1,244 +1,210 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>J.P International School | Best CBSE School in Ara, Bihar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="J.P International School in Ara, Bihar offers top CBSE education with modern facilities. Enroll now!">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="google-site-verification" content="OkLOC5VY7XqVJAP5SWbLQXquQi_uTA_XzjlV7Jkpg14" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.P International School | Best CBSE School in Ara, Bihar</title>
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+  <meta name="author" content="J.P International School">
+  <meta name="description"
+    content="J.P International School in Ara, Bihar offers top CBSE education with modern facilities. Enroll now!">
+  <meta name="keywords"
+    content="J.P International School, coaching, online education, answer keys, marks upload, offline classes, study materials, competitive exams, student portal, rishabh sahil, rishabh kumar">
+  <meta name="developer" content="rishabhsahil" />
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="OkLOC5VY7XqVJAP5SWbLQXquQi_uTA_XzjlV7Jkpg14" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link.active {
+      color: orange !important;
+    }
+
+  </style>
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <a href="#">
-                <h1>J.P International School</h1>
-                <p>Education for all</p>
-            </a>
-        </div>
-        <nav>
-            <div class="toggle-button">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <div class="close-button"></div>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#About">About</a>
-                </li>
-                <li>
-                    <a href="#Academic">Academics</a>
-                </li>
-                <li>
-                    <a href="#Gallery">Gallery</a>
-                </li>
-                <li>
-                    <a href="#Contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-50 text-gray-800">
 
-    <section id="#" class="hero">
-        <div class="slide-bg ">
-        </div>
-        <div class="hero-text-container">
-            <h1>J.P International School </h1>
-            <p>Education for all <span class="nepali-font"> - सबैका लागि शिक्षा</span></p>
-            <a class="btn" href="#About">Learn more..</a>
-        </div>
-    </section>
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-blue-600 text-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="logo.jpg" alt="J.P International School Logo" class="h-10 w-10 object-cover rounded-full">
+        <span class="text-2xl font-extrabold">J.P International School</span>
+      </a>
 
-    <section id="About" class="about-section">
-        <h1>About Our School</h1>
-        <div class="flex-container">
-            <div class="about-info">
-                <h2>Established Date</h2>
-                <p>J.P International School, Lalitpur was established in January 1, 2023.
-                    Some short feature about this school will be written here.
-                </p>
-                <h2>Our Mission</h2>
-                <p> Our mission is to provide high-quality education to students of all ages and
-                    backgrounds. We believe that education is the key to unlocking a brighter future, and we are
-                    committed to helping our students achieve their full potential.It is an English medium
-                    school that trains student for good discipline, moral education, technical education and quality education.
-                </p>
-                <p>
-                    Our team of experienced educators and staff are dedicated to creating a welcoming and inclusive
-                    learning environment, where every student can thrive. Whether you're just starting your educational
-                    journey or looking to further your skills, we have a wide range of programs and courses to meet your
-                    needs.
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#home" class="nav-link active hover:text-orange-300 transition">Home</a>
+        <a href="#about" class="nav-link hover:text-orange-300 transition">About Us</a>
+        <!-- <a href="#courses" class="nav-link hover:text-orange-300 transition">Courses</a>
+        <a href="#register" class="nav-link hover:text-orange-300 transition">Registration</a> -->
+        <a class='hover:text-orange-300 transition' href='teachers.html'>Teachers</a>
+        <a class='hover:text-orange-300 transition' href='contact.html'>Contact Us</a>
+        <a href="#visit" class="nav-link hover:text-orange-300 transition">Visit Us</a>
+        <a class='hover:text-orange-300 transition' href='gallery.html'>Gallery</a>
+      </nav>
 
-                    We believe that learning should be an engaging and enjoyable experience. That's
-                    why we use innovative teaching methods and technology to create dynamic and interactive classrooms.
-                    We are passionate about education, and we are excited to help you achieve your goals.
+      <!-- Mobile toggle -->
+      <div class="md:hidden">
+        <button id="mobileToggle" class="px-3 py-2 rounded-md bg-blue-700 hover:bg-blue-800">☰</button>
+      </div>
+    </div>
 
-                    Thank you for choosing J.P International School. We look forward to helping you succeed!</p>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-blue-600 text-white px-4 pt-2 pb-4">
+      <a href="#home" class="nav-link active block py-2 hover:text-orange-300 transition">Home</a>
+      <a href="#about" class="nav-link block py-2 hover:text-orange-300 transition">About Us</a>
+      <!-- <a href="#courses" class="nav-link block py-2 hover:text-orange-300 transition">Courses</a>
+      <a href="#register" class="nav-link block py-2 hover:text-orange-300 transition">Registration</a> -->
+      <a class='block py-2 hover:text-orange-300 transition' href='teachers.html'>Teachers</a>
+      <a class='block py-2 hover:text-orange-300 transition' href='contact.html'>Contact Us</a>
+      <a href="#visit" class="block py-2 hover:text-orange-300 transition">Visit Us</a>
+      <a class='hover:text-orange-300 transition' href='gallery.html'>Gallery</a>
+    </div>
 
-                <p> Some more info is written here. Note this is just sample, any information wriiten here is not correct.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+    <script>
+      const toggleButton = document.getElementById('mobileToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
 
-            </div>
-            <div class="members">
-                <span class="span-text">Principal</span>
-                <div class="img-container">
-                    <img src="img/pcp.png" alt="Principal">
-                </div>
-                <div class="principal-info">
-                    <h2>Anju Mam</h2>
-                    <p>Anju Mam has been the principal of J.P International School for over 2 years. She is passionate about
-                        education and is dedicated to providing a supportive and inclusive learning environment for all
-                        students. Under her leadership, J.P International School has become one of the top educational
-                        institutions in the region.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      toggleButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
 
-    <section id="Academic" class="academic-section">
-        <h2>Academics</h2>
-        <div class="education-levels">
-            <div class="education-level">
-                <h3>Pre-primary</h3>
-                <p>Age: 3-5 years, Nursery, LKG, UKG</p>
-                <p>Curriculum: Play-based learning</p>
-            </div>
-            <div class="education-level">
-                <h3>Primary</h3>
-                <p>Class 1 to Class 5</p>
-                <p>Curriculum: Reading, writing, math, science, english, nepali, social studies etc.</p>
-            </div>
-            <div class="education-level">
-                <h3>Lower Secondary</h3>
-                <p>Class 6 to Class 8</p>
-                <p>Curriculum: Science, math, social studies, english, nepali etc.</p>
-            </div>
-            <div class="education-level">
-                <h3>Secondary</h3>
-                <p>Class 9 & Class 10</p>
-                <p>Curriculum: Science, math, social studies, english, nepali and other optional subjects as directed by
-                    NEB.</p>
-            </div>
-            <div class="education-level">
-                <h3>Higher Secondary (+2 Level)</h3>
-                <p> Intermediate Level: Class 11 & 12</p>
-                <p>Curriculum: Science / Management / Arts</p>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section id="Gallery" class="gallery">
-        <h2>Gallery</h2>
-        <ul class="grid">
-            <li>
-                <figure class="grid__figure">
-                    <img src="https://picsum.photos/300/200/?random" alt="">
-                    <figcaption>image description title here..</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="grid__figure">
-                    <img src="https://picsum.photos/200/800/?random" alt="">
-                    <figcaption>image description title here..</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="grid__figure">
-                    <img src="https://picsum.photos/200/300/?random" alt="">
-                    <figcaption>image description title here..</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="grid__figure">
-                    <img src="https://picsum.photos/400/200/?random" alt="">
-                    <figcaption>image description title here..</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="grid__figure">
-                    <img src="https://picsum.photos/200/600/?random" alt="">
-                    <figcaption>image description title here...</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="grid__figure">
-                    <img src="https://picsum.photos/600/600/?random" alt="">
-                    <figcaption>image description title here..</figcaption>
-                </figure>
-            </li>
+      // Close mobile menu on link click
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    </script>
+  </header>
 
-        </ul>
-    </section>
-    <hr>
-    <section id="Contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fa fa-envelope"></i>
-                <a href="mailto:example@example.com">example@example.com</a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <a href="tel:+91-9334716626">+91-9334716626</a>
-            </div>
-            <div class="contact-item">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <h3 style="margin: 20px; text-align: center;padding: 1%;">Location:</h3>
-        <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23922.282182998995!2d87.2938151806242!3d26.288792979533365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef9bf1d1e97de3%3A0x706c663dd1036e62!2sMajhua%2C%20Bihar%20854318%2C%20India!5e1!3m2!1sen!2sus!4v1756089443952!5m2!1sen!2sus" width="600" height="450"
-             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>J.P International School, Ara, Bihar</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#About">About us</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                        <li><a href="#Gallery">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="creator">
-                <span>Created by RISHABH SAHIL | &copy; 2025 |</span>
-            </div>
-        </div>
-    </footer>
-    <script src="script/nav-menu.js"></script>
+  <!-- Hero -->
+  <section id="home" class="relative h-screen">
+    <img src="unnamed.png" alt="Students Learning" class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 bg-black/30">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 animate-bounce">J.P International School</h1>
+      <p class="text-white text-lg md:text-2xl mb-6">Shaping Future Minds with Expert Guidance</p>
+      <a href="#courses" class="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition">Explore
+        Courses</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-blue-600 text-center mb-12">About Us</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="unnamed1.png" alt="About J.P International School" class="w-full rounded-xl shadow-lg">
+      <div class="text-gray-700">
+        <p class="mb-4">J.P International School boasts expert faculty and clean facilities. The school offers a wide range of extracurricular activities. 
+          It`s a great choice for a Co-Ed institute with an excellent reputation.</p>
+        <p>With innovative teaching methods, interactive sessions, and a student-friendly environment, J.P International School
+          ensures every student reaches their full potential.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses
+  <section id="courses" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-blue-600 text-center mb-12">Our Courses</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition hover:scale-105">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">Neev</h3>
+        <p class="text-gray-600 mb-2">Classes: 8-10</p>
+        <p class="text-gray-500">A strong foundation program to build conceptual clarity and problem-solving skills for
+          middle school students preparing for board exams and competitive tests.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition hover:scale-105">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">Sankalp</h3>
+        <p class="text-gray-600 mb-2">Classes: 11-12</p>
+        <p class="text-gray-500">Advanced preparation program for senior students targeting board exams, JEE, NEET, and
+          other competitive exams with expert guidance and comprehensive study material.</p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Registration
+  <section id="register" class="max-w-7xl mx-auto px-6 py-16 bg-blue-50 rounded-xl shadow-inner mb-16">
+    <h2 class="text-3xl font-bold text-blue-600 text-center mb-8">Get in Touch / Register for Offline Classes</h2>
+    <div class="max-w-3xl mx-auto">
+      <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 rounded-xl shadow-lg grid gap-6"
+        onsubmit="return validateForm()">
+        <input type="hidden" name="access_key" value="444b3508-eca9-42fa-88ac-89fc69fb5cf0" />
+        <input type="hidden" name="redirect" value="thankyou.html" />
+        <input type="hidden" name="subject" value="New Registration for Offline Classes" />
+
+        <input type="text" name="name" placeholder="Full Name"
+          class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+        <input type="email" name="email" placeholder="Email Address"
+          class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="tel" name="mobile" placeholder="Mobile Number"
+          class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required
+          pattern="[6-9]{1}[0-9]{9}" title="Enter a valid 10-digit Indian mobile number">
+        <select name="course" class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          required>
+          <option value="">Select Course</option>
+          <option value="neev">Neev (Class 8-10)</option>
+          <option value="sankalp">Sankalp (Class 11-12)</option>
+        </select>
+        <button type="submit" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition">Submit</button>
+      </form>
+    </div>
+  </section> -->
+
+  <script>
+    function validateForm() {
+      const mobile = document.querySelector('input[name="mobile"]').value;
+      const regex = /^[6-9]\d{9}$/;
+      if (!regex.test(mobile)) {
+        alert("Please enter a valid 10-digit Indian mobile number.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+  <!-- Visit Us -->
+  <section id="visit" class="max-w-7xl mx-auto px-6 py-16">
+    <div
+      class="bg-white shadow-lg rounded-2xl p-10 text-center border border-gray-200 hover:shadow-2xl transition duration-300">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">📍 Visit J.P International School</h2>
+      <p class="text-gray-600 mb-8">
+        We’d love to welcome you to our institute! Reach us easily at the address below or use the map for quick
+        navigation.
+      </p>
+      <div class="text-lg text-gray-800 leading-relaxed space-y-1">
+        <p><strong>Address:</strong></p>
+        <p>Bhojpur District, Arrah City</p>
+        <p>Near Katira More, Swastik Building</p>
+        <p>Bihar - 802302</p>
+        <p>Phone Number - <a href="tel:+91 9334716626" style="text-decoration: none; color: rgb(0, 0, 0);">+91 9334716626</a></p>
+      </div>
+      <div class="mt-8">
+        <iframe
+          src="https://www.google.com/maps?q=Near+Katira+More,+Swastik+Building,+Arrah,+Bhojpur,+Bihar+802302&amp;output=embed"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          class="rounded-xl shadow-md hover:shadow-lg transition duration-300"></iframe>
+      </div>
+      <div class="mt-8">
+        <a href="https://maps.google.com/?q=Acharya+Classes+Arrah" target="_blank"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition duration-300">
+          Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <footer class="py-6 text-center text-white bg-blue-700">
+    © 2025 J.P International School | Contact: <a href="tel:+91 9334716626" style="text-decoration: none; color: aliceblue;">+91 9334716626</a> | developer: <a href="http://instagram.com/rishabhsahill" style="text-decoration: none; color: aliceblue;">rishabhsahil</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
