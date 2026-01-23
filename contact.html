@@ -71,6 +71,7 @@
       <form action="https://api.web3forms.com/submit"
   method="POST" 
   class="bg-white p-8 rounded-xl shadow-md grid gap-4"
+        id="axinyyyx"
   onsubmit="return validateMobile()"
 >
   <!-- Web3Forms Access Key -->
@@ -168,10 +169,25 @@
   <footer class="py-6 text-center text-white bg-yellow-700">
     © 2024 J.P International School | Contact: <a href="tel:+91 9334716626" style="text-decoration: none; color: aliceblue;">+91 9334716626</a> | developer: <a href="http://instagram.com/rishabhsahill" style="text-decoration: none; color: aliceblue;">rishabhsahil</a>
   </footer>
+  <script>
+const form = document.getElementById('axinyyyx');
+
+form.addEventListener('submit', function(e) {
+
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field")
+        return
+    }
+});
+  </script>
 <script src="script.js"></script>
 <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
+
 
 
 
