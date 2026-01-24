@@ -103,7 +103,7 @@
     <img src="unnamed.png" alt="Students Learning" class="absolute inset-0 w-full h-full object-cover z-0">
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 bg-black/30">
       <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">J.P International School</h1>
-      <p class="text-white text-lg md:text-2xl mb-6">Shaping Future Minds with Expert Guidance</p>
+      <p id="typingText" class="text-white text-lg md:text-2xl mb-6"></p>
       <a href="#about" class="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition">About Us</a>
     </div>
   </section>
@@ -216,6 +216,42 @@
   <footer class="py-6 text-center text-white bg-yellow-700">
     © 2024 J.P International School | Contact: <a href="tel:+91 9334716626" style="text-decoration: none; color: aliceblue;">+91 9334716626</a> | developer: <a href="http://instagram.com/rishabhsahill" style="text-decoration: none; color: aliceblue;">rishabhsahil</a>
   </footer>
+<script>
+  const texts = [
+    "Shaping Future Minds with Expert Guidance",
+    "Empowering Students for Success",
+    "Learning Today, Leading Tomorrow",
+    "Quality Education with Modern Approach"
+  ];
+
+  let index = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const speed = 80;
+  const delay = 1500;
+
+  const typingElement = document.getElementById("typingText");
+
+  function typeEffect() {
+    const currentText = texts[index];
+
+    if (!isDeleting) {
+      typingElement.textContent = currentText.slice(0, charIndex++);
+      if (charIndex > currentText.length) {
+        setTimeout(() => (isDeleting = true), delay);
+      }
+    } else {
+      typingElement.textContent = currentText.slice(0, charIndex--);
+      if (charIndex < 0) {
+        isDeleting = false;
+        index = (index + 1) % texts.length;
+      }
+    }
+    setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
+  }
+
+  typeEffect();
+</script>
 
   <script src="script.js"></script>
 </body>
